@@ -29,10 +29,11 @@ Um mit dem Sammeln von Geschäftsinformationen von Google Maps zu beginnen, folg
 3. **Wichtig:** Bevor du den Scraper startest, musst du deine Keywords in eine Datei namens `keywords.txt` schreiben. Diese Datei sollte im Hauptverzeichnis des Scrapers liegen. Jedes Keyword muss auf einer neuen Zeile stehen.
 4. Führe die `start.bat` Datei aus, um den Scraper zu starten.
 
-Nachdem der Scraper gestartet wurde, liest er die Keywords aus der `keywords.txt` Datei und beginnt mit der Suche nach diesen Begriffen auf Google Maps. Die Ergebnisse der Suche werden dann automatisch extrahiert und in eine CSV-Datei geschrieben. Diese CSV-Datei findest du im Verzeichnis des Scrapers. Der Dateiname wird generiert, indem ein zufälliger String an den Suchbegriff angehängt wird, um sicherzustellen, dass jede Datei eindeutig ist.
+Nachdem der Scraper gestartet wurde, liest er die Keywords aus der `keywords.txt` Datei und beginnt mit der Suche nach diesen Begriffen auf Google Maps. 
+Die Ergebnisse der Suche werden dann automatisch extrahiert und in eine CSV-Datei geschrieben. 
+Diese CSV-Datei findest du im Verzeichnis des Scrapers. 
+Der Dateiname wird generiert, indem ein zufälliger String an den Suchbegriff angehängt wird, um sicherzustellen, dass jede Datei eindeutig ist.
 
 Die CSV-Datei kannst du dann mit jedem Tabellenkalkulationsprogramm wie Microsoft Excel oder Google Sheets öffnen, um die gesammelten Daten zu analysieren und zu verwenden.
-
-Der Scraper beginnt dann mit dem Sammeln von Geschäftsinformationen aus Google Maps Einträgen, basierend auf den Parametern, die du vorgibst. Bitte beachte, dass die Nutzung des Scrapers den Nutzungsbedingungen von Google unterliegen kann, also nutze ihn verantwortungsbewusst und ethisch.
 
 Viel Spaß beim Scrapen!
