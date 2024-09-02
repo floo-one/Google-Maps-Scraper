@@ -1,39 +1,57 @@
-# Google Maps Business Info Scraper
+# Google Maps Scraper
 
-Hey! Schön, dass du dich für den Google Maps Business Info Scraper interessierst. Dieses Tool ist dafür gemacht, um wichtige Informationen über Geschäfte aus Google Maps zu extrahieren. Du kannst damit Namen, Adressen, Webseiten, Telefonnummern, Bewertungen und die Anzahl der Bewertungen sammeln. Das ist super praktisch für Recherche, Analyse oder Datensammlung.
+This Google Maps Scraper is a Node.js tool that uses Puppeteer, Cheerio, and other libraries to extract business information from Google Local Services. It gathers data such as business name, address, phone number, website, rating, and more, and outputs the results in CSV format.
 
 ## Features
 
-- Holt wichtige Geschäftsinformationen aus Google Maps Einträgen.
-- Speichert Infos wie Name, Adresse, Webseite, Telefonnummer, Bewertung und Anzahl der Bewertungen in einer CSV-Datei.
-- Ermöglicht dir die Kombination von Suchbegriffen und CSV-Dateien für eine einfache Nutzung.
-
-## Voraussetzungen
-
-Bevor du loslegst, stell sicher, dass du Folgendes auf deinem System eingerichtet hast:
-
-1. **Node.js LTS**: Installiere die LTS-Version von Node.js von [https://nodejs.org/en](https://nodejs.org/en). Node.js ist eine JavaScript-Laufzeitumgebung, die es dir ermöglicht, JavaScript-Code außerhalb eines Browserumfelds auszuführen.
+- **Automated Scraping**: Automatically navigates through Google Local Services, accepting cookies, clicking through business cards, and gathering relevant information.
+- **Data Extraction**: Extracts essential business details such as name, address, phone number, website, and ratings.
+- **CSV Export**: Outputs the scraped data in CSV format for easy analysis.
+- **Dynamic Keyword Input**: Uses a text file (`keywords.txt`) to dynamically input search terms for scraping.
+- **Stealth Mode**: Utilizes the Puppeteer Stealth Plugin to avoid detection by Google.
 
 ## Installation
 
-1. Klone oder lade das Repository auf deinen lokalen Rechner herunter.
-2. Navigiere im Command-Line Interface (CLI) zum Verzeichnis des Scrapers.
-3. Führe die `install.bat` Datei aus dem Repository aus. Das installiert alle notwendigen Abhängigkeiten, die der Scraper benötigt.
+1. Clone this repository:
+    ```bash
+    git clone https://github.com/yourusername/google-maps-scraper.git
+    cd google-maps-scraper
+    ```
 
-## Benutzung
+2. Install dependencies:
+    ```bash
+    npm install
+    ```
 
-Um mit dem Sammeln von Geschäftsinformationen von Google Maps zu beginnen, folge diesen Schritten:
+3. Create a `keywords.txt` file in the root directory with your search terms, one per line.
 
-1. Stelle sicher, dass du die Installationsschritte oben abgeschlossen hast.
-2. Öffne ein Command-Line Interface (CLI) und navigiere zum Verzeichnis des Scrapers.
-3. **Wichtig:** Bevor du den Scraper startest, musst du deine Keywords in eine Datei namens `keywords.txt` schreiben. Diese Datei sollte im Hauptverzeichnis des Scrapers liegen. Jedes Keyword muss auf einer neuen Zeile stehen.
-4. Führe die `start.bat` Datei aus, um den Scraper zu starten.
+## Usage
 
-Nachdem der Scraper gestartet wurde, liest er die Keywords aus der `keywords.txt` Datei und beginnt mit der Suche nach diesen Begriffen auf Google Maps. 
-Die Ergebnisse der Suche werden dann automatisch extrahiert und in eine CSV-Datei geschrieben. 
-Diese CSV-Datei findest du im Verzeichnis des Scrapers. 
-Der Dateiname wird generiert, indem ein zufälliger String an den Suchbegriff angehängt wird, um sicherzustellen, dass jede Datei eindeutig ist.
+1. Run the scraper:
+    ```bash
+    node app.js
+    ```
 
-Die CSV-Datei kannst du dann mit jedem Tabellenkalkulationsprogramm wie Microsoft Excel oder Google Sheets öffnen, um die gesammelten Daten zu analysieren und zu verwenden.
+2. The tool will automatically open a browser, search for each keyword in `keywords.txt`, and scrape the relevant data.
 
-Viel Spaß beim Scrapen!
+3. The results will be saved in a CSV file in the current directory.
+
+## Use Cases
+
+- **Lead Generation**: Collect contact information and business details for potential clients in a specific area.
+- **Market Research**: Analyze competitor data by scraping business information in targeted regions.
+- **Data Aggregation**: Gather data for building comprehensive business directories.
+- **SEO Analysis**: Extract and evaluate business ratings and reviews for local SEO strategies.
+
+## Requirements
+
+- Node.js (v14 or higher)
+- A stable internet connection
+
+## Disclaimer
+
+This tool is intended for educational purposes only. Scraping Google Maps or any other platform may violate their terms of service. Use this tool responsibly.
+
+## License
+
+This project is licensed under the MIT License. See the `LICENSE` file for details.
