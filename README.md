@@ -14,7 +14,7 @@ This Google Maps Scraper is a Node.js tool that uses Puppeteer, Cheerio, and oth
 
 1. Clone this repository:
     ```bash
-    git clone https://github.com/yourusername/google-maps-scraper.git
+    git clone https://github.com/floo-one/Google-Maps-Scraper.git
     cd google-maps-scraper
     ```
 
